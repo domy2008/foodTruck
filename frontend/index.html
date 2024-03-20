@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Truck Food Now!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+        <div class="search-wrapper">
+            <input type="text" v-model="searchTerm" id="search-bar" placeholder="Chicken">
+            <button id="search-btn" @click="search">Search</button>
+          </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

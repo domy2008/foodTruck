@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-website-service
+spec:
+  selector:
+    app: nginx-website # Matches the deployment selector
+  ports:
+  - protocol: TCP
+    port: 80 # Service port
+    targetPort: 80  # Target port within the container
+  type: NodePort # Expose the service through a NodePort
+

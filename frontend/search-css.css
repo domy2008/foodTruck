@@ -1,0 +1,30 @@
+body {
+    background-image: url(food.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  #data-list {
+    max-width: 800px;
+    margin: 0 auto; /* 水平居中 */
+  }
+  
+  #data-list li {
+    background-color: rgba(255, 192, 203, 0.5); /* 粉色半透明 */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #data-list li:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  

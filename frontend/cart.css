@@ -1,0 +1,85 @@
+body {
+    display: flex; /* Maintain flexbox layout */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Horizontally center content */
+    min-height: 100vh; /* Ensure background covers entire viewport */
+    margin: 0;
+    background-image: url(food.jpeg); /* Set background image */
+    background-size: cover; /* Stretch image to cover the entire background */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+  }
+  
+  #item-details-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset default padding */
+    margin: 0; /* Reset default margin */
+    max-width: 500px; /* Set a maximum width for the list */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    text-align: center; /* Center the text within list items */
+    padding: 20px; /* Add some padding inside the list */
+  }
+  
+  #item-details-list li {
+    margin-bottom: 10px; /* Add some spacing between list items */
+  }
+  
+  #order-button {
+    width: 200px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing above the button */
+    margin-bottom: 50px;
+    display: block; /* Make it a block-level element */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  #order-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Styles for the modal window (if you want to include it) */
+  
+  #order-modal {
+    position: fixed; /* Position the modal absolutely */
+    top: 0; /* Align top edge to the top of the viewport */
+    left: 0; /* Align left edge to the left of the viewport */
+    width: 100%; /* Span the entire width of the viewport */
+    height: 100%; /* Span the entire height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex; /* Enable flexbox layout for centering */
+    justify-content: center; /* Horizontally center the modal content */
+    align-items: center; /* Vertically center the modal content */
+    z-index: 10; /* Ensure modal content appears above other elements */
+    /* Initially hidden */
+  }
+  
+  #order-modal.visible {
+    display: block; /* Show the modal when visible class is added */
+  }
+  
+  .modal-content {
+    background-color: white; /* White background for the modal content */
+    padding: 20px; /* Add some padding inside the content */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center the text within the modal content */
+  }
+  
+  #close-modal-button {
+    background-color: #4CAF50; /* Green color for close button */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  #close-modal-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

@@ -1,6 +1,0 @@
-{
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.compile.nullAnalysis.mode": "disabled",
-    "cmake.configureOnOpen": false,
-    "java.test.config": {}
-}

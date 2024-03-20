@@ -1,3 +1,5 @@
+frontend/.vscode
 backend/build/
 backend/.gradle/
+backend/.vscode
 .DS_Store

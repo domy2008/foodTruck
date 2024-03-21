@@ -1,3 +1,8 @@
+/************************************************************************************************
+ * @author : cong
+ * @comments: This class is responsible for reading the CSV file and returning the records as 
+ *           a list of string arrays.
+ *************************************************************************************************/
 package com.foodtruck.search.utils;
 
 import java.io.BufferedReader;

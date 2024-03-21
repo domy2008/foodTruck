@@ -1,3 +1,7 @@
+/**********************************************************************************
+ * @authro: cong
+ * @comment: This is a test class for the FoodtruckController class
+ **********************************************************************************/
 import com.foodtruck.search.FoodtruckApplication;
 import com.foodtruck.search.controller.*;
 import com.foodtruck.search.service.ServiceDB;

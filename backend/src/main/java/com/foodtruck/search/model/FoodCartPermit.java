@@ -1,3 +1,7 @@
+/*************************************************************************************************
+ * @author:  cong
+ * @comment: this is the model class for foodtruck, map the sqlite database table
+ *************************************************************************************************/
 package com.foodtruck.search.model;
 
 import java.sql.Date;

@@ -1,3 +1,8 @@
+/************************************************************************************************
+ * @authro: cong
+ * @comments :This class is responsible for connecting to the database and querying use sql statement
+ ************************************************************************************************/
+ 
 package com.foodtruck.search.service;
 
 import java.sql.Connection;

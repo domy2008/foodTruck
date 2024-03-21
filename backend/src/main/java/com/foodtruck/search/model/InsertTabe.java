@@ -1,3 +1,8 @@
+/************************************************************************************************
+ * @author: cong
+ * @comments:This class is used to insert the data from the CSV file into the SQLite database.
+ *          The CSV file is read line by line and the data is inserted into the database using a prepared statement.
+ *************************************************************************************************/
 package com.foodtruck.search.model;
 
 import java.io.BufferedReader;

@@ -1,3 +1,8 @@
+/************************************************************************************
+ * @author:  cong
+ * @comment: this is the controller class for foodtruck, expose the restful api
+ * 			  endpoint to the client
+ *************************************************************************************/
 package com.foodtruck.search.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;

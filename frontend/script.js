@@ -30,7 +30,7 @@ function getSearchResults(searchTerm) {
   })
     .then((response) => {
       if (!response.ok) {
-        throw new Error("API request failed");
+        throw new Error("API request is failed, not get the data from the server");
       }
       return response.json(); // Assuming the API returns JSON data
     })
@@ -41,7 +41,7 @@ function getSearchResults(searchTerm) {
 
       const stringifiedData = JSON.stringify(data);
       console.log(stringifiedData);
-      localStorage.setItem('searchResults', JSON.stringify(stringifiedData));
+      localStorage.setItem('searchResults', JSON.stringify(data));
 
       console.log("*************************************************");
       window.location.href = `results.html`;
@@ -51,6 +51,7 @@ function getSearchResults(searchTerm) {
       // Handle errors gracefully, e.g., display an error message to the user
     });
 }
+
 
 
 

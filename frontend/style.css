@@ -1,4 +1,4 @@
-body {
+body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -16,13 +16,21 @@ body {
     height: 100vh; /* Maintain full viewport height */
 }
 
-.search-wrapper {
+.search-wrapper1 {
     /* Adjust styles for search bar and button */
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
 }
 
+.search-wrapper {
+    display: flex; /* Enable flexbox for the wrapper */
+    justify-content: flex-start; /* Align items at opposite ends */
+    align-items: center; /* Vertically center content */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
 #search-bar {
     padding: 10px;
     border: 1px solid #ccc;

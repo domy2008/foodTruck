@@ -3,6 +3,7 @@
  * @comments: This class is responsible for configuring the CORS settings for the application.
  * 
  * ************************************************************************************************/
+
 package com.foodtruck.search;
 
 import org.springframework.context.annotation.Configuration;

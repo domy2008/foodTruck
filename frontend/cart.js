@@ -33,8 +33,6 @@ if (item) { // Check for either parameter (depending on chosen method)
 const orderButton = document.getElementById('order-button');
 orderButton.addEventListener('click', handleOrderClick);
 
-orderButton.addEventListener('click', handleOrderClick);
-
 function handleOrderClick() {
   // Display order confirmation message using alert (can be replaced with a modal or other mechanisms)
   alert('Order is on the way!');

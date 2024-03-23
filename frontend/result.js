@@ -1,27 +1,12 @@
 const dataList = document.getElementById('data-list');
 
-const jsonString = '[{"applicant": 5}, {"applicant": 5000}]';
-
-try {
-  const jsonArray = JSON.parse(jsonString);
-  console.log(jsonArray); // This will output the parsed JSON array
-
-  if(Array.isArray(jsonArray)){//
-    console.log("jsonArray is an array");
-  }
-
-} catch (error) {
-  console.error("Error parsing JSON:", error);
-  // Handle parsing errors (e.g., invalid JSON format)
-}
-
 try {
   var datas = localStorage.getItem('searchResults');
 
   const temp = JSON.parse(datas);
-  const searchResults = JSON.parse(temp);
-  console.log("********  searchResults  ******************"); // Log the retrieved data
-  console.log(searchResults);
+  //const searchResults = JSON.parse(temp);
+  const searchResults = temp;
+ 
 
   if (Array.isArray(searchResults)) {
       // Process the parsed JSON array

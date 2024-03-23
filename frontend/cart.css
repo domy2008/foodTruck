@@ -45,41 +45,5 @@ body {
   
   /* Styles for the modal window (if you want to include it) */
   
-  #order-modal {
-    position: fixed; /* Position the modal absolutely */
-    top: 0; /* Align top edge to the top of the viewport */
-    left: 0; /* Align left edge to the left of the viewport */
-    width: 100%; /* Span the entire width of the viewport */
-    height: 100%; /* Span the entire height of the viewport */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    display: flex; /* Enable flexbox layout for centering */
-    justify-content: center; /* Horizontally center the modal content */
-    align-items: center; /* Vertically center the modal content */
-    z-index: 10; /* Ensure modal content appears above other elements */
-    /* Initially hidden */
-  }
   
-  #order-modal.visible {
-    display: block; /* Show the modal when visible class is added */
-  }
-  
-  .modal-content {
-    background-color: white; /* White background for the modal content */
-    padding: 20px; /* Add some padding inside the content */
-    border-radius: 5px; /* Add rounded corners */
-    text-align: center; /* Center the text within the modal content */
-  }
-  
-  #close-modal-button {
-    background-color: #4CAF50; /* Green color for close button */
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer; /* Indicate clickable behavior */
-  }
-  
-  #close-modal-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
   

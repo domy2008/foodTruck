@@ -12,15 +12,24 @@
 ## On the Backend:
 1. backend is write by java 17, on OpenJDK 21, spring boot 3.x, and sqlite database for simple. Also supplied a unit test  project for the backend, at src/test/java folder, it is based on Spring Boot Test framework
 2. the whole site http://47.116.222.189/ deployed on a cloud server, Aliyun ECS
-3. clone the source code with git ,open the folder with VS code to compile, add "Extension Pack For Java", "Test Runner For Java" as VS code extension to compile java.
-4. The truck food info in CSV is inserted to sql lite database already
-5. sql.sql is to create the  db table schema,  InsertTable.java is the file to flush the sql lite db .
+3. For virtual machine deployment:
+   - clone the source code with git ,
+   - open the folder with VS code to compile, add "Extension Pack For Java", "Test Runner For Java" as VS code extension
+   - compile java with gradle
+4.  For k8s deploy
+
+     - there are backend-deployment.yaml and service.yaml in foder, use kubectl apply -f to deploy
+     - or-- docker pull aicong190/backend-java:latest   for get the image directly from docder hub
+     -  then: kubetrl run backend-java:latest
+6. The truck food info in CSV is inserted to sql lite database already
+7. sql.sql is to create the  db table schema,  InsertTable.java is the file to flush the sql lite db .
 
 
 ## On the Frontend:
 1. frontend is just native js/html/css, no framework used for simple development
 2. donwload the source code, open with VS code to compile, put the folder to a web server, then you can see the page
-3. also supplied a dock file ,you can build to deploy to k8s
+3. also supplied a Dockfile file ,you can build to deploy to k8s
+4. or docker pull aicong190/frontend:1.0,  and kubectl run frontend, to run in k8s.
 
 ## Arckitecture:
 !["architecture image"](archi.png)

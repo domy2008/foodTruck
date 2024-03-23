@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-java-deployment
+spec:
+  replicas: 1 # Number of pod replicas (you can adjust this)
+  selector:
+    matchLabels:
+      app: backend-java
+  template:
+    metadata:
+      labels:
+        app: backend-java
+    spec:
+      containers:
+      - name: backend-java
+        image: aicong190/backend-java:latest # Replace with your image name and tag
+        ports:
+        - containerPort: 9090 # Replace with your application port if needed
+          # ... other container configurations (resources, environment variables, etc.)
+

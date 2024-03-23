@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-java-service # Name for your service
+spec:
+  selector: # Selects pods with the label `app: backend-java`
+    app: backend-java
+  ports:
+  - protocol: TCP # Define the service port protocol
+    port: 9099 # External port on your local machine to access the service (customizable)
+    targetPort: 9090 # Port within the pod where your application listens (matches your deployment.yaml)
+  type: NodePort # Exposes the service through a NodePort on each worker node
+

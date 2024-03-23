@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service-app1  # Replace with a descriptive name
+spec:
+  selector:
+    app: frontend  # Matches the label in your deployment YAML (if applicable)
+  ports:
+  - protocol: TCP
+    port: 80  # Replace with the port your frontend application listens on
+    targetPort: 80  # Replace if the container port is different
+  type: NodePort  # Exposes the service through a NodePort
+

@@ -1,8 +1,7 @@
 # Introduction
 
-## This project is for engineering accessment for food truck demo. The project designed for a online food delivery system:
-
-1. user open the web at http://47.116.222.189/, 
+## This project is just a demo for lululemon pipeline. The project designed for a online food delivery system:
+1. open the domain
 2. input food you want(like Chicken), then clicke search button
 3. the system will return the food truck that sell the food, and the vendor list information
 4. user can click the vendor list to see the detail information of the vendor

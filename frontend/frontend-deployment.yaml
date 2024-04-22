@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: frontend-app1  # Name for your deployment
 spec:
-  replicas: 5  # Number of Pod replicas (you can scale this up or down)
+  replicas: 2  # Number of Pod replicas (you can scale this up or down)
   selector:
     matchLabels:
       app: frontend  # Label selector for Pods
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend  # Container name within the Pod
-        image: aicong190/frontend:1.0  # Replace with the specific tag if needed
+        image: aicong190/frontend:2.0  # Replace with the specific tag if needed
         ports:
         - containerPort: 8080  # Expose the container port (assuming your app listens on port 80)
 

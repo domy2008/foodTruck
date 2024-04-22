@@ -1,7 +1,8 @@
 const searchBar = document.getElementById('search-bar');
 const searchBtn = document.getElementById('search-btn');
 
-const BASE_URL = 'http://localhost:9090'; // replace with your IP address and port
+//const BASE_URL = 'http://localhost:9090'; // replace with your IP address and port
+const BASE_URL= "http://backend-java-service:9090";
 
 searchBtn.addEventListener('click', function() {
   const searchTerm = searchBar.value;

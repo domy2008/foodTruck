@@ -5,6 +5,8 @@
  *************************************************************************************/
 package com.foodtruck.search.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,13 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.foodtruck.search.model.FoodCartPermit;
-import com.foodtruck.search.service.ServiceDB;
-
-import java.util.List;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.foodtruck.search.model.FoodCartPermit;
+import com.foodtruck.search.service.ServiceDB;
 
 @RestController
 @RequestMapping("/api")

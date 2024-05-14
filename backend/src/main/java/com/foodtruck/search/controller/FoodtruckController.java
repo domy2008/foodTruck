@@ -34,7 +34,8 @@ public class FoodtruckController {
 	@GetMapping("/foodtrucks")
 	public String getAllFoodtrucks() {
 		// Your code to retrieve all food trucks
-		return "All food trucks from cong";
+		System.out.println("******  Yes, i was called *****");
+		return "@getAllFoodtrucks";
 	}
 	@GetMapping("/getAllMatchedFood")
 	public String getAllMatchedFood(@RequestParam String subItems) {
